@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://101.43.73.38:3306/pollenweb?useUnicode=true&characterEncoding=UTF-8
+    username: PollenWeb
+    password: pollenweb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#  thymeleaf:
+#    prefix: classpath:/templates/
+#    suffix: html
+server:
+  8080
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/pollen/pollenweb/mapper/xml/*.xml
+
