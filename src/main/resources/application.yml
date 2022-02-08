@@ -4,6 +4,16 @@ spring:
     username: PollenWeb
     password: pollenweb
     driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 200MB
+      max-request-size: 200MB
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+    suffix: .html
+    encoding: UTF-8
 #  thymeleaf:
 #    prefix: classpath:/templates/
 #    suffix: html
@@ -14,3 +24,5 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   mapper-locations: classpath:com/pollen/pollenweb/mapper/xml/*.xml
 
+sf:
+    fileUploadDir: /Users/macmini/Downloads/testfile

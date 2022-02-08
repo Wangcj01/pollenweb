@@ -12,7 +12,7 @@ public class FilterConfiguration {
     public FilterRegistrationBean registrationBean(){
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
         filterRegistrationBean.setFilter(new UserFilter());
-        filterRegistrationBean.addUrlPatterns("/unlogin/*");
+        filterRegistrationBean.addUrlPatterns("/unlogin/*","/profile/*");
         return filterRegistrationBean;
     }
 }

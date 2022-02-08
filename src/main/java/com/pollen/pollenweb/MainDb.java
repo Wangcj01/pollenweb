@@ -33,7 +33,7 @@ public class MainDb {
         globalConfig.setServiceName("%sService");
         autoGenerator.setGlobalConfig(globalConfig);
         PackageConfig packageConfig = new PackageConfig();
-        packageConfig.setParent("com.pollen.pollenweb");
+        packageConfig.setParent("com.pollen");
         packageConfig.setEntity("entity");
         packageConfig.setMapper("mapper");
         packageConfig.setController("controller");

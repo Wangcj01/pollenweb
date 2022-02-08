@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("com.pollen.pollenweb.mapper")
-public class PollenwebApplication {
+public class PollenwebApplication{
 
 	public static void main(String[] args) {
 		SpringApplication.run(PollenwebApplication.class, args);
