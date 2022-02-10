@@ -1,5 +1,8 @@
 package com.pollen.pollenweb.utils;
 
+import org.apache.shiro.crypto.hash.SimpleHash;
+import org.apache.shiro.util.ByteSource;
+
 import java.security.MessageDigest;
 import java.util.Random;
 
@@ -78,6 +81,7 @@ public class MD5Util {
      *
      *@return boolean true表示和原密码一致   false表示和原密码不一致
      */
+
     public static boolean getSaltverifyMD5(String password, String md5str) {
         char[] cs1 = new char[32];
         char[] cs2 = new char[16];
@@ -88,6 +92,14 @@ public class MD5Util {
         }
         String Salt = new String(cs2);
         return md5Hex(password + Salt).equals(String.valueOf(cs1));
+    }
+
+    public static String SysMd5(String username,String password) {
+        String hashAlgorithmName = "MD5";//加密方式
+        ByteSource salt = ByteSource.Util.bytes(username);//以账号作为盐值
+        int hashIterations = 1024;//加密1024次
+        String newPassword= new SimpleHash(hashAlgorithmName,password,salt,hashIterations).toHex();
+        return newPassword;
     }
 
 }

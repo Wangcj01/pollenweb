@@ -8,6 +8,7 @@ import com.pollen.pollenweb.exception.PwException;
 import com.pollen.pollenweb.mapper.UserMapper;
 import com.pollen.pollenweb.result.ResponseEnum;
 import com.pollen.pollenweb.service.IUserService;
+import com.pollen.pollenweb.utils.MD5Util;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,6 +41,10 @@ public  class UserServiceImpl extends ServiceImpl<UserMapper, User> implements I
             log.info("【code:1004 msg:用户名已存在】");
             return 2;
         }else{
+            //插入前走加密流程
+            String md5password = MD5Util.SysMd5(user.getUser_name(),user.getPassword());
+            user.setPassword(md5password);
+            //插入db
             return userMapper.insert(user);
         }
 

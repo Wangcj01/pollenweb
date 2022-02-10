@@ -32,6 +32,12 @@ public class UserController {
     @Autowired
     private IUserService userService;
 
+    @RequestMapping("/errorLogin")
+    public Integer errorLogin(){
+        System.out.println("跳转错误界面");
+        return null;
+    }
+
     //判断用户登录是否成功
     //直接抛出给统一错误处理类解决
     @RequestMapping(value="/toLogin")
