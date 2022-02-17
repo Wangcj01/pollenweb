@@ -3,6 +3,8 @@ package com.pollen.pollenweb.mapper;
 import com.pollen.pollenweb.entity.ConvertedFiles;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
+import java.util.List;
+
 /**
  * <p>
  *  Mapper 接口
