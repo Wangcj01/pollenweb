@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>history</title>
+</head>
+<body>
+
+<div class="table-responsive">
+  <table id="historyList" class="table table-striped table-sm">
+    <thead>
+    <tr>
+      <th>编号</th>
+      <th>文件名</th>
+      <th>所属区域</th>
+      <th>大小</th>
+      <th>制作时间</th>
+      <th>转换时间</th>
+      <th>地区</th>
+      <th>所属用户</th>
+      <th>状态</th>
+    </tr>
+    </thead>
+    <tbody>
+<!--    <tr th:each="file:${index}">-->
+<!--      <td th:text="${file.fileId}"></td>-->
+<!--      <td th:text="${file.fileName}"></td>-->
+<!--      <td th:text="${file.fileAddress}"></td>-->
+<!--      <td th:text="${file.fileSize}">MB</td>-->
+<!--      <td th:text="${#dates.format(file.makeTime, 'yyy-MMM-ddd HH:mm')}"></td>-->
+<!--      <td th:text="${#dates.format(file.convertTime, 'yyy-MMM-ddd HH:mm')}"></td>-->
+<!--      <td th:text="${file.area}"></td>-->
+<!--      <td th:text="${file.userName}"></td>-->
+<!--      <td th:text="${file.state}"></td>-->
+<!--      <td>-->
+<!--        <button class="btn btn-sm btn-primary">编辑</button>-->
+<!--        <button class="btn btn-sm btn-danger">删除</button>-->
+<!--      </td>-->
+<!--    </tr>-->
+    </tbody>
+  </table>
+</div>
+
+<button id="abc" type="button" value="按钮">按钮</button>
+<script>
+  $(document).ready(function (){
+    $.ajax({
+      url:"/convertedFiles/historyList",
+      type:"get",
+      success:function (data){
+        alert(data.msg);
+      },
+      error:function (){
+        alert("失败")
+      }
+    })
+  })
+</script>
+<!--<script>-->
+<!--    $.ajax({-->
+<!--      url:"/convertedFiles/historyList",-->
+<!--      type:"get",-->
+<!--      success: function(data){-->
+<!--        alert(data.msg);-->
+<!--        // var obj=eval(data);-->
+<!--        // var tbody=$('<tbody></tbody>');-->
+<!--        // $(obj).each(function (index){-->
+<!--        //   var val=obj[index];-->
+<!--        //   var tr=$('<tr></tr>');-->
+<!--        //   tr.append('<td>'+ val.fileId);-->
+<!--        //   tbody.append(tr);-->
+<!--        // });-->
+<!--        // $('#historyList tbody').replaceWith(tbody);-->
+<!--      },-->
+<!--      error:function(){-->
+<!--        alert('服务器超时，请重试！');-->
+<!--      }-->
+<!--    });-->
+<!--  });-->
+<!--</script>-->
+
+</body>
+</html>
