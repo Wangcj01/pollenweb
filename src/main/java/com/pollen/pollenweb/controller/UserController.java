@@ -81,6 +81,13 @@ public class UserController {
 
     }
 
+    @RequestMapping(value="/detective")
+    public String detective(){return "/detective";}
+
+    @RequestMapping(value ="/login")
+    public String login(){
+        return "/login";
+    }
     /**
      * 退出登录
      */
@@ -88,7 +95,7 @@ public class UserController {
     public String logout(){
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
-        return "redirect:/index";
+        return "redirect:/login";
     }
 
 }
