@@ -10,25 +10,26 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>INSPINIA | Dashboard</title>
-<!--    <link rel="stylesheet" th:herf="@{/Bootstrap/css/bootstrap.min.css}" href="../static/Bootstrap/css/bootstrap.min.css" >-->
-<!--    <link href="../static/Bootstrap/font-awesome/css/font-awesome.css" rel="stylesheet" th:herf="@{/Bootstrap/font-awesome/css/font-awesome.css}">-->
-<!--    <link href="../static/Bootstrap/css/plugins/dataTables/datatables.min.css" rel="stylesheet" th:herf="@{/Bootstrap/css/plugins/dataTables/datatables.min.css}">-->
-<!--    &lt;!&ndash; Toastr style &ndash;&gt;-->
-<!--    <link href="../static/Bootstrap/css/plugins/toastr/toastr.min.css" rel="stylesheet" th:herf="@{/Bootstrap/css/plugins/toastr/toastr.min.css}">-->
 
-<!--    &lt;!&ndash; Gritter &ndash;&gt;-->
-<!--    <link href="../static/Bootstrap/js/plugins/gritter/jquery.gritter.css" rel="stylesheet" th:herf="@{/Bootstrap/js/plugins/gritter/jquery.gritter.css}">-->
-<!--    <link href="../static/Bootstrap/css/plugins/select2/select2.min.css" rel="stylesheet" th:herf="@{/Bootstrap/css/plugins/select2/select2.min.css}">-->
-<!--    <link href="../static/Bootstrap/css/plugins/iCheck/custom.css" rel="stylesheet" th:herf="@{/Bootstrap/css/plugins/iCheck/custom.css}">-->
-<!--    <link href="../static/Bootstrap/css/animate.css" rel="stylesheet" th:herf="@{/Bootstrap/css/animate.css}">-->
-    <link rel="stylesheet" th:herf="@{/layui/css/style.css}" href="../static/layui/css/style.css"/>
-<!--    <link href="../static/Bootstrap/css/plugins/datapicker/datepicker3.css" rel="stylesheet" th:herf="@{/Bootstrap/css/plugins/datapicker/datepicker3.css}">-->
+    <link href="/static/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/Bootstrap/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/static/Bootstrap/css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+    <!-- Toastr style -->
+    <link href="/static/Bootstrap/css/plugins/toastr/toastr.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" th:href="@{/layui/css/layui.css}" href="../static/layui/css/layui.css"/>
+    <!-- Gritter -->
+    <link href="/static/Bootstrap/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="/static/Bootstrap/css/plugins/select2/select2.min.css" rel="stylesheet">
+    <link href="/static/Bootstrap/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="/static/Bootstrap/css/animate.css" rel="stylesheet">
+    <link href="/static/Bootstrap/css/style.css" rel="stylesheet">
+    <link href="/static/Bootstrap/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
 
 </head>
 
@@ -382,58 +383,52 @@
 </div>
 
 <!-- Mainly scripts -->
-<script th:src="@{/Bootstrap/js/jquery-3.1.1.min.js}"></script>
-<script th:src="@{/Bootstrap/js/bootstrap.min.js}"></script>
-<script th:src="@{/Bootstrap/js/plugins/metisMenu/jquery.metisMenu.js}"></script>
-<script th:src="@{/Bootstrap/js/plugins/slimscroll/jquery.slimscroll.min.js}"></script>
+<script src="/static/Bootstrap/js/jquery-3.1.1.min.js"></script>
+<script src="/static/Bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/Bootstrap/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="/static/Bootstrap/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-<!--<script src="../static/Bootstrap/js/jquery-3.1.1.min.js" th:src="@{/Bootstrap/js/jquery-3.1.1.min.js}"></script>-->
-<!--<script src="../static/Bootstrap/js/bootstrap.min.js" th:src="@{/Bootstrap/js/bootstrap.min.js}"></script>-->
-<!--<script src="../static/Bootstrap/js/plugins/metisMenu/jquery.metisMenu.js" th:src="@{/Bootstrap/js/plugins/metisMenu/jquery.metisMenu.js}"></script>-->
-<!--<script src="../static/Bootstrap/js/plugins/slimscroll/jquery.slimscroll.min.js" th:src="@{/Bootstrap/js/plugins/slimscroll/jquery.slimscroll.min.js}"></script>-->
-
-<script src="../static/Bootstrap/js/plugins/dataTables/datatables.min.js" th:src="@{/Bootstrap/js/plugins/dataTables/datatables.min.js}"></script>
+<script src="/static/Bootstrap/js/plugins/dataTables/datatables.min.js"></script>
 <!-- Flot -->
-<script src="../static/Bootstrap/js/plugins/flot/jquery.flot.js" th:src="@{/Bootstrap/js/plugins/flot/jquery.flot.js}"></script>
-<script src="../static/Bootstrap/js/plugins/flot/jquery.flot.tooltip.min.js" th:src="@{/Bootstrap/js/plugins/flot/jquery.flot.tooltip.min.js}"></script>
-<script src="../static/Bootstrap/js/plugins/flot/jquery.flot.spline.js" th:src="@{/Bootstrap/js/plugins/flot/jquery.flot.spline.js}"></script>
-<script src="../static/Bootstrap/js/plugins/flot/jquery.flot.resize.js" th:src="@{/Bootstrap/js/plugins/flot/jquery.flot.resize.js}"></script>
-<script src="../static/Bootstrap/js/plugins/flot/jquery.flot.pie.js" th:src="@{/Bootstrap/js/plugins/flot/jquery.flot.pie.js}"></script>
+<script src="/static/Bootstrap/js/plugins/flot/jquery.flot.js"></script>
+<script src="/static/Bootstrap/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+<script src="/static/Bootstrap/js/plugins/flot/jquery.flot.spline.js"></script>
+<script src="/static/Bootstrap/js/plugins/flot/jquery.flot.resize.js"></script>
+<script src="/static/Bootstrap/js/plugins/flot/jquery.flot.pie.js"></script>
 
 <!-- Peity -->
-<script src="../static/Bootstrap/js/plugins/peity/jquery.peity.min.js" th:src="@{/Bootstrap/js/plugins/peity/jquery.peity.min.js}"></script>
-<script src="../static/Bootstrap/js/demo/peity-demo.js" th:src="@{/Bootstrap/js/demo/peity-demo.js}"></script>
+<script src="/static/Bootstrap/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="/static/Bootstrap/js/demo/peity-demo.js"></script>
 
 <!-- Custom and plugin javascript -->
-<script src="../static/Bootstrap/js/inspinia.js" th:src="@{/Bootstrap/js/inspinia.js}"></script>
-<script src="../static/Bootstrap/js/plugins/pace/pace.min.js" th:src="@{/Bootstrap/js/plugins/pace/pace.min.js}"></script>
+<script src="/static/Bootstrap/js/inspinia.js"></script>
+<script src="/static/Bootstrap/js/plugins/pace/pace.min.js"></script>
 
 <!-- jQuery UI -->
-<script src="../static/Bootstrap/js/plugins/jquery-ui/jquery-ui.min.js" th:src="@{/Bootstrap/js/plugins/jquery-ui/jquery-ui.min.js}"></script>
+<script src="/static/Bootstrap/js/plugins/jquery-ui/jquery-ui.min.js"></script>
 
 <!-- GITTER -->
-<script src="../static/Bootstrap/js/plugins/gritter/jquery.gritter.min.js" th:src="@{/Bootstrap/js/plugins/gritter/jquery.gritter.min.js}"></script>
+<script src="/static/Bootstrap/js/plugins/gritter/jquery.gritter.min.js"></script>
 
 <!-- Sparkline -->
-<script src="../static/Bootstrap/js/plugins/sparkline/jquery.sparkline.min.js" th:src="@{/Bootstrap/js/plugins/sparkline/jquery.sparkline.min.js}"></script>
+<script src="/static/Bootstrap/js/plugins/sparkline/jquery.sparkline.min.js"></script>
 
 <!-- Sparkline demo data  -->
-<script src="../static/Bootstrap/js/demo/sparkline-demo.js" th:src="@{/Bootstrap/js/demo/sparkline-demo.js}"></script>
+<script src="/static/Bootstrap/js/demo/sparkline-demo.js"></script>
 
 <!-- ChartJS-->
-<script src="../static/Bootstrap/js/plugins/chartJs/Chart.min.js" th:src="@{/Bootstrap/js/plugins/chartJs/Chart.min.js}"></script>
+<script src="/static/Bootstrap/js/plugins/chartJs/Chart.min.js"></script>
 
 <!-- Toastr -->
-<script src="../static/Bootstrap/js/plugins/toastr/toastr.min.js" th:src="@{/Bootstrap/js/plugins/toastr/toastr.min.js}"></script>
+<script src="/static/Bootstrap/js/plugins/toastr/toastr.min.js"></script>
 
 <!-- iCheck -->
-<script src="../static/Bootstrap/js/plugins/iCheck/icheck.min.js" th:src="@{/Bootstrap/js/plugins/iCheck/icheck.min.js}"></script>
+<script src="/static/Bootstrap/js/plugins/iCheck/icheck.min.js"></script>
 
 <!-- select2 -->
-<script src="../static/Bootstrap/js/plugins/select2/select2.full.min.js" th:src="@{/Bootstrap/js/plugins/select2/select2.full.min.js}"></script>
+<script src="/static/Bootstrap/js/plugins/select2/select2.full.min.js"></script>
 <!-- datapicker -->
-<script src="../static/Bootstrap/js/plugins/datapicker/bootstrap-datepicker.js" th:src="@{/Bootstrap/js/plugins/datapicker/bootstrap-datepicker.js}"></script>
-
+<script src="/static/Bootstrap/js/plugins/datapicker/bootstrap-datepicker.js"></script>
 
 
 <script>
@@ -441,7 +436,7 @@
     //     event.returnValue="确定离开当前页面吗？";
     // }
 
-    // $(document).ready(function() {
+    $(document).ready(function() {
     //
     //     $('.dataTables-example').DataTable({
     //         language:{
@@ -516,32 +511,32 @@
         });
     }
 
-    // function start(){
-    //
-    //     $.ajax({
-    //         url:"/judge",
-    //         type: "POST",
-    //         dataType:"json",
-    //         success:function(result){
-    //             if(result==false){
-    //                 alert("请您先进行登录");
-    //                 window.location.href='/login';
-    //             }
-    //             else{
-    //                 window.onbeforeunload = function (e) {
-    //                     e = e || window.event;
-    //                     // 兼容IE8和Firefox 4之前的版本
-    //                     if (e) {
-    //                         e.returnValue = '关闭提示';
-    //                     }
-    //                     // Chrome, Safari, Firefox 4+, Opera 12+ , IE 9+
-    //                     return '关闭提示';
-    //                 };
-    //                 detective();
-    //             }
-    //         }
-    //     });
-    // }
+    function start(){
+
+        $.ajax({
+            url:"/judge",
+            type: "POST",
+            dataType:"json",
+            success:function(result){
+                if(result==false){
+                    alert("请您先进行登录");
+                    window.location.href='/login';
+                }
+                else{
+                    window.onbeforeunload = function (e) {
+                        e = e || window.event;
+                        // 兼容IE8和Firefox 4之前的版本
+                        if (e) {
+                            e.returnValue = '关闭提示';
+                        }
+                        // Chrome, Safari, Firefox 4+, Opera 12+ , IE 9+
+                        return '关闭提示';
+                    };
+                    detective();
+                }
+            }
+        });
+    }
 
     //检测
     function detective() {
