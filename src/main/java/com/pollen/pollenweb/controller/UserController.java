@@ -88,6 +88,11 @@ public class UserController {
     public String login(){
         return "/login";
     }
+
+    @RequestMapping(value ="/register")
+    public String register(){
+        return "/register";
+    }
     /**
      * 退出登录
      */
