@@ -15,7 +15,7 @@ public class RedirectController {
 
     @GetMapping("/")
     public String main(){
-        return "redirect:/index";
+        return "redirect:/detective";
     }
 
     @ResponseBody

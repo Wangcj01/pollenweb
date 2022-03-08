@@ -11,16 +11,16 @@
         <header class="layui-elip">注册</header>
         <form class="layui-form">
             <div class="layui-input-inline">
-                <input type="text" name="login_name" required lay-verify="required" placeholder="账号" class="layui-input" >
+                <input type="text" name="loginname" required lay-verify="required" placeholder="账号" class="layui-input" >
             </div>
             <div class="layui-input-inline">
                 <input type="password" name="password" required lay-verify="required" placeholder="密码" class="layui-input">
             </div>
             <div class="layui-input-inline">
-                <input type="text" name="user_name" required lay-verify="required" placeholder="用户名" class="layui-input" >
+                <input type="text" name="username" required lay-verify="required" placeholder="用户名" class="layui-input" >
             </div>
             <div class="layui-input-inline">
-                <input type="text" name="phone_number" required lay-verify="required" placeholder="手机号" class="layui-input" >
+                <input type="text" name="phonenumber" required lay-verify="required" placeholder="手机号" class="layui-input" >
             </div>
             <div class="layui-input-inline">
                 <input type="text" name="email" required lay-verify="required" placeholder="邮箱" class="layui-input" >
@@ -45,7 +45,7 @@
                     success:function(result){
                         if(result.code=="0"){
                             layer.msg(result.msg,{icon:result.icon,anim:result.anim},function (){
-                                // window.location.href = "/login";
+                                window.location.href = "/login";
                             });
                         }else{
                             layer.msg(result.msg,{icon:result.icon,anim:result.anim});
