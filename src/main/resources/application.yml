@@ -10,7 +10,7 @@ spring:
       max-file-size: 200MB
       max-request-size: 200MB
   mvc:
-    static-path-pattern: /static/**
+    static-path-pattern: /static/*
   thymeleaf:
     prefix: classpath:/templates/
     cache: false
